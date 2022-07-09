@@ -1,5 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import ongoing from '../components/Orders/components/OngoingOrder.vue'
+import complete from '../components/Orders/components/CompleteOrders.vue'
+import cancel from '../components/Orders/components/CancelledOrders.vue'
 
 Vue.use(VueRouter)
 
@@ -60,17 +63,17 @@ const routes = [
   {
     name:'ongoing',
     path: '/ongoing',
-    component: () => import(/* webpackChunkName: "register" */ '../components/Orders/components/OngoingOrder.vue')
+    component: ongoing
   },
   {
     name:'complete',
     path: '/complete',
-    component: () => import(/* webpackChunkName: "register" */ '../components/Orders/components/CompleteOrders.vue')
+    component: complete
   },
   {
     name:'cancel',
     path: '/cancel',
-    component: () => import(/* webpackChunkName: "register" */ '../components/Orders/components/CancelledOrders.vue')
+    component: cancel
   }
 ]
 

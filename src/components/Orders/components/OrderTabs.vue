@@ -27,7 +27,7 @@
 // }
 </script>
 
-<style scope>
+<style scoped>
 .topnav {
   overflow: hidden;
   background-color: white;

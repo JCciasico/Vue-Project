@@ -122,6 +122,11 @@ export default {
                 centered: true
             })
 
+        },
+        methods: {
+            goToOngoing() {
+            this.$router.push('/ongoing');
+            }
         }
     }
 }

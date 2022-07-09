@@ -29,6 +29,6 @@ export default {
 }
 .router-view{
   height: 100vh;
-  background: linear-gradient(to right, white, yellow);
+  background-color: white;
 }
 </style>

@@ -168,7 +168,7 @@ export default {
   overflow: hidden;
   background-color: white;
   align-self: center;
-  margin-top: -8px;
+  margin-top: -7px;
 }
 
 .topnav a {

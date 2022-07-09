@@ -35,7 +35,7 @@ export default {
 }
 </script>
 
-<style scope>
+<style scoped>
 #but1 {
   background-color: yellow;
   color: black;
