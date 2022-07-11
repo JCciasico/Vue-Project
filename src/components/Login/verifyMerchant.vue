@@ -39,8 +39,8 @@
             <br />
             <p class="p-4 text-muted text-center mt-5">
               Already have an account?
-              <router-link to="SignUp.vue" class="text-primary">
-                Sign in.</router-link>
+              <a href="/" class="text-primary">
+                Sign in.</a>
             </p>
             <v-row class="container" style="margin-left:165px">
               <v-col class="center">

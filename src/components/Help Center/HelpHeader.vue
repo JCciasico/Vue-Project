@@ -1,16 +1,23 @@
 <template>
-    <div class="container-fluid title d-flex justify-content-between align-items-center">
-        <h3 id="help-center">Help Center</h3>
-        <div class="d-flex align-items-center mail">
-            <h5 id="concern-title">Tell us your concerns</h5>
-            <a href="#" class="envelope"><i class="fa-solid fa-envelope"></i></a>
+    <div>
+        <div class="container-fluid title d-flex justify-content-between align-items-center">
+            <h3 id="help-center">Help Center</h3>
+            <div class="d-flex align-items-center mail">
+                <h5 id="concern-title">Tell us your concerns</h5>
+                <a v-b-modal.modal-custom-concern class="envelope"><i class="fa-solid fa-envelope"></i></a>
+            </div>
         </div>
+        <ConcernModal/>
     </div>
 </template>
 
 <script>
+import ConcernModal from './ConcernModal.vue'
 export default{
     name: 'TitleHeader',
+    components:{
+        ConcernModal
+    }
 }
 </script>
 

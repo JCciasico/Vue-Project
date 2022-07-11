@@ -71,11 +71,11 @@
             </form>
             <template #modal-footer>
                 <div class="w-100 d-flex justify-content-center align-items-center" style="column-gap: 25px">
-                    <b-button size="md" @click="$bvModal.hide('modal-custom-1')"
+                    <b-button id="modal-btn" size="md" @click="$bvModal.hide('modal-custom-1')"
                         style="width:100px; border-radius:15px; background-color: white; color:#BC9476; box-shadow: 0px 1px 1px 1px #ced6e0; border:none;">
                         Back
                     </b-button>
-                    <b-button size="md" :disabled="!formisvalid" @click="$bvModal.hide('modal-custom-1')"
+                    <b-button id="modal-btn" size="md" :disabled="!formisvalid" @click="$bvModal.hide('modal-custom-1')"
                         style="width:100px; border-radius:10px; background-color: #FFC000; color:white; border:none; box-shadow: 0px 1px 1px 1px #ced6e0; ">
                         Update
                     </b-button>
@@ -158,4 +158,5 @@ export default {
     scrollbar-width: none;
     /* Firefox */
 }
+
 </style>
