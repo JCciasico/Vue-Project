@@ -15,80 +15,86 @@
             </b-tabs>
         </div>
         <br>
-        <div class="container-fluid titleone">
-            <div class="row">
-                <div class="col-6 text-left" style="height: 10px;">
-                    <span style="color:white ; font-weight:bold; margin-left:1ch; font-size: large;">March 25,
-                        2022 3:00PM</span>
-                </div>
-                <div class="col-15 text-left" style="margin-left:2ch;">
-                    <div class="mb-1">
-                        <b-button id="cancel" @click="showMsgBoxTwo" style="margin-left:50ch;">Cancel Order
-                        </b-button>
-                        {{ String(boxTwo) }}
+        <b-container class="cancelled">
+            <b-row>
+                <div class="container-fluid titleone">
+                    <div class="row">
+                        <div class="col-6 text-left" style="height: 10px;">
+                            <span style="color:white ; font-weight:bold; margin-left:1ch; font-size: large;">March 25,
+                                2022 3:00PM</span>
+                        </div>
+                        <div class="col-15 text-left" style="margin-left:2ch;">
+                            <div class="mb-1">
+                                <b-button id="cancel" @click="showMsgBoxTwo" style="margin-left:50ch;">Cancel Order
+                                </b-button>
+                                {{ String(boxTwo) }}
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="container-fluid titletwoa">
-            <i class="fa-regular fa-circle" style="color:#FBCD10; margin-left: 3ch;"></i>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span id="user">House No., Street, City, Country, Postal Code</span> <br>
-            <br>
+                <div class="container-fluid titletwoa">
+                    <i class="fa-regular fa-circle" style="color:#FBCD10; margin-left: 3ch;"></i>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span id="user">House No., Street, City, Country, Postal Code</span> <br>
+                    <br>
 
 
-            <i class="fa-solid fa-location-dot" style="color:#FBCD10; margin-left: 3ch;"></i>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span id="user">House No., Street, City, Country, Postal Code</span>
-            <!--b-button variant="light" id="cancel" style="margin-left:50ch;">Cancel</b-button-->
+                    <i class="fa-solid fa-location-dot" style="color:#FBCD10; margin-left: 3ch;"></i>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span id="user">House No., Street, City, Country, Postal Code</span>
+                    <!--b-button variant="light" id="cancel" style="margin-left:50ch;">Cancel</b-button-->
 
-        </div>
-
-        <div class="container-fluid titletwob">
-            <div class="row">
-                <div class="col-6 text-left" style="color: black; height: 20px;">
-                    <span style="color:black ; font-weight:bold; margin-left: 10ch;">Truck</span>
                 </div>
-                <div class="col-6 text-center">
-                    <span style="color:navy; font-weight:bold;">P424</span>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="container-fluid titletwo">
-            <div class="row">
-                <div class="col-6 text-left" style="height: 10px;">
-                    <span style="color:white ; font-weight:bold; margin-left:1ch; font-size: large;">March 25,
-                        2022 3:00PM</span>
-                </div>
-                <div class="col-15 text-left" style="margin-left:2ch;">
-                    <div class="mb-1">
-                        <b-button id="cancel" @click="showMsgBoxTwo" style="margin-left:50ch;">Cancel Order
-                        </b-button>
-                        {{ String(boxTwo) }}
+
+                <div class="container-fluid titletwob">
+                    <div class="row">
+                        <div class="col-6 text-left" style="color: black; height: 20px;">
+                            <span style="color:black ; font-weight:bold; margin-left: 10ch;">Truck</span>
+                        </div>
+                        <div class="col-6 text-center">
+                            <span style="color:navy; font-weight:bold;">P424</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="container-fluid titletwoa">
-            <i class="fa-regular fa-circle" style="color:#FBCD10; margin-left: 3ch;"></i>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span id="user">House No., Street, City, Country, Postal Code</span> <br>
-            <br>
-
-
-            <i class="fa-solid fa-location-dot" style="color:#FBCD10; margin-left: 3ch;"></i>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span id="user">House No., Street, City, Country, Postal Code</span>
-            <!--b-button variant="light" id="cancel" style="margin-left:50ch;">Cancel</b-button-->
-        </div>
-
-        <div class="container-fluid titletwob">
-            <div class="row">
-                <div class="col-6 text-left" style="color: black; height: 20px;">
-                    <span style="color:black ; font-weight:bold; margin-left: 10ch;">Motorcycle</span>
+                </b-row>
+                <br>
+                <b-row>
+                <div class="container-fluid titletwo">
+                    <div class="row">
+                        <div class="col-6 text-left" style="height: 10px;">
+                            <span style="color:white ; font-weight:bold; margin-left:1ch; font-size: large;">March 25,
+                                2022 3:00PM</span>
+                        </div>
+                        <div class="col-15 text-left" style="margin-left:2ch;">
+                            <div class="mb-1">
+                                <b-button id="cancel" @click="showMsgBoxTwo" style="margin-left:50ch;">Cancel Order
+                                </b-button>
+                                {{ String(boxTwo) }}
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6 text-center">
-                    <span style="color:navy; font-weight:bold;">P123</span>
+                <div class="container-fluid titletwoa">
+                    <i class="fa-regular fa-circle" style="color:#FBCD10; margin-left: 3ch;"></i>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span id="user">House No., Street, City, Country, Postal Code</span> <br>
+                    <br>
+
+
+                    <i class="fa-solid fa-location-dot" style="color:#FBCD10; margin-left: 3ch;"></i>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span id="user">House No., Street, City, Country, Postal Code</span>
+                    <!--b-button variant="light" id="cancel" style="margin-left:50ch;">Cancel</b-button-->
                 </div>
-            </div>
-        </div>
+
+                <div class="container-fluid titletwob">
+                    <div class="row">
+                        <div class="col-6 text-left" style="color: black; height: 20px;">
+                            <span style="color:black ; font-weight:bold; margin-left: 10ch;">Motorcycle</span>
+                        </div>
+                        <div class="col-6 text-center">
+                            <span style="color:navy; font-weight:bold;">P123</span>
+                        </div>
+                    </div>
+                </div>
+            </b-row>
+        </b-container>
     </div>
 </template>
 
@@ -103,7 +109,7 @@ export default {
             boxTwo: '',
         }
     },
-    components:{
+    components: {
         NavbarTop,
         TitleHeader
     },
@@ -125,17 +131,18 @@ export default {
         },
         methods: {
             goToOngoing() {
-            this.$router.push('/ongoing');
+                this.$router.push('/ongoing');
             }
         }
     }
 }
 </script>
 <style scoped>
-.toship-body{
+.toship-body {
     height: 100%;
     background-color: white;
 }
+
 .titleone {
     background-color: #003060;
     padding: .4rem;
@@ -191,44 +198,46 @@ export default {
 }
 
 #cancel {
-  background-color: yellow;
-  color: black;
-  font-family: 'Poppins','sans-serif';
-  font-size: 1em;
-  padding: .5em;
-  padding-left:1rem;
-  padding-right:1rem;
-  border-radius:4rem;
+    background-color: yellow;
+    color: black;
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 1em;
+    padding: .5em;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 4rem;
 }
+
 .topnav {
-  overflow: hidden;
-  background-color: white;
-  align-self: center;
-  margin-top: -8px;
+    overflow: hidden;
+    background-color: white;
+    align-self: center;
+    margin-top: -8px;
 }
 
 .topnav a {
-  width: 25%;
-  float: left;
-  font-family: Arial;
-  color: black;
-  text-align: center;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 17px;
+    width: 25%;
+    float: left;
+    font-family: Arial;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 .topnav a.active {
-  border: 1px solid grey;
-  color: solid white;
-  background-color: #1267bd;
+    border: 1px solid grey;
+    color: solid white;
+    background-color: #1267bd;
 }
 
 .topnav a.disable {
-  border: 1px solid grey;
-  color: solid white;
+    border: 1px solid grey;
+    color: solid white;
 }
-a.disable:hover{
+
+a.disable:hover {
     background-color: #FBCD10;
 }
 </style>

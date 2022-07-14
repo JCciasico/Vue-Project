@@ -1,30 +1,30 @@
 <template>
-<div class="routes">
-<!-- ICARGO SECTION -->
-  <nav>
-    <NavbarTop/>
-  </nav>
+  <div class="routes">
+    <!-- ICARGO SECTION -->
+    <nav>
+      <NavbarTop />
+    </nav>
 
-<!-- NEW BOOKING SECTION -->
+    <!-- NEW BOOKING SECTION -->
     <div class="container-fluid title">
-        <h3>New Booking</h3>
+      <h3>New Booking</h3>
     </div>
 
-<!-- NAVIGATION SECTION FOR - ROUTE TAB - OTHER DETAILS - PRICE -->
-  <div>
+    <!-- NAVIGATION SECTION FOR - ROUTE TAB - OTHER DETAILS - PRICE -->
+    <div class="routetab">
       <b-tabs justified>
         <div class="topnav">
-          <a class="active"><b style="color: white">Routes</b></a>
-          <a class="disable"><b>Other Details</b></a>
-          <a class="disable"><b>Price</b></a>
+          <a class="active"><b id="top-nav" style="color:white">Routes</b></a>
+          <a class="disable"><b id="top-nav">Other Details</b></a>
+          <a class="disable"><b id="top-nav">Price</b></a>
         </div>
       </b-tabs>
-  </div>
-  <div>
-    <RoutePanel />
-  </div>
+    </div>
+    <div>
+      <RoutePanel />
+    </div>
 
-</div>
+  </div>
 </template>
 
 
@@ -83,6 +83,12 @@ import NavbarTop from '../../Navbar/NavbarTop.vue';
   #user{
     display: none;
   }
+  .title{
+    width: 100%;
+  }
+  .routetab{
+    width: 100%;
+  }
 }
 
 /* NEW BOOKING SECTION STYLE*/
@@ -124,6 +130,17 @@ import NavbarTop from '../../Navbar/NavbarTop.vue';
   background-color: white;
   height: 100%;
 }
+@media(max-width:400px){
+    #top-nav{
+      font-size: 0.8rem;
+    }
+}
+@media(max-width:300px){
+    #top-nav{
+      font-size: 0.5rem;
+    }
+}
+
 
 /* NEW BOOKING SECTION STYLE*/
 </style>

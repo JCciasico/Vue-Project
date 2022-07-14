@@ -2,7 +2,6 @@
     <div class="container-fluid title">
         <h3>New Booking</h3>
     </div>
-    
 </template>
 
 <script>
@@ -18,5 +17,4 @@ export default{
     color: white;
     padding-left: 3rem;
 }
-
 </style>

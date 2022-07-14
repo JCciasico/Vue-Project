@@ -22,6 +22,8 @@
 
 <script>
 import NameModal from './NameModal.vue';
+import axios from 'axios';
+
 
 export default {
     name: 'BodyUser',
@@ -32,7 +34,18 @@ export default {
         return{
             company: 'ABC Hardware',
         }
-     }
+     },
+    mounted() {
+        this.getName()
+    },
+    methods: {
+        async getName() {
+            await axios.get('/verification').then((res) => {
+                console.log(res)
+            })
+        }
+    }
+     
 
 }
 </script>
@@ -41,8 +54,8 @@ export default {
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 
 .fa-circle-user {
-    width: 300px;
-    height: 300px;
+    width: 275px;
+    height: 275px;
     color: #0D7CFF;
     margin-bottom: 10px;
 }
@@ -70,7 +83,13 @@ export default {
 .fa-pen-to-square:hover{
     color: #0D7CFF;
 }
-@media (max-width:600px) {
+@media (max-width:1200px) {
+    .fa-circle-user {
+        width: 225px;
+        height: 225px;
+    }
+}
+@media (max-width:800px) {
     .fa-circle-user {
         width: 200px;
         height: 200px;

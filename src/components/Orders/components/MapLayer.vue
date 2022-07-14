@@ -1,86 +1,79 @@
 <template>
   <div>
-    <div>
-
-      <nav class="navbar navbar-expand-lg navbar-light menu">
-        <div class="container-fluid OrderNumber">
-
-          <h3 style="margin-left:30ch;">Order #133443383590</h3>
-          <button variant="light"><span class="fa fa-circle-info circle-info"></span></button>
-        
-        </div>
-      </nav>
-
-    </div>
     <br>
-    <GmapMap :center='center' :zoom='12' style='width:100%;  height: 200px;'>
+    <GmapMap :center='center' :zoom='12' style='width:100%;  height: 270px;'>
       <GmapMarker :key="index" v-for="(m, index) in markers" :position="m.position" @click="center = m.position" />
     </GmapMap>
 
     <!---CONTENT-->
-    <div class="container-fluid Details">
-      <div class="row">
-        <div class="col-5 text-left" style="color: white; height: 0px;">
-          <span style="color:white ; font-weight:bold; margin-left: 40ch;">Sender:</span>
-        </div>
-        <div class="col-6 text-left">
-          <span style="color:white; margin-left: 0ch;">Emelio Marasigan W. Araullones</span>
-        </div>
-
-        <div class="row">
-          <div class="col-5 text-left" style="color: white; height: 0px;">
-            <span style="color:white ; font-weight:bold; margin-left: 40ch;">Recipient:</span>
-          </div>
-          <div class="col-6 text-left">
-            <span style="color:white; margin-left: 0ch;">Loida Anne Alicia Deline Q. Esteban</span> <br> <br>
-            <i class="fa-solid fa-box box" style="color:#e7ba09; margin-left:-26ch;"></i>
-            <span style="color:white; margin-left: -16ch;"> Port Batangas, Batangas Port Access Road, Calatagan, Batangas
-            </span>
-            <br><br>
-          </div>
-
-
-
+    <b-container class="Map Layer">
+      <b-row>
+        <div class="container-fluid Details">
           <div class="row">
-            <div class="col-6 text-left">
-              <div class="container-fluid vertical-line" style="margin-left: 35ch;"></div>
+            <div class="col-5 text-left" style="color: white; height: 0px;">
+              <span style="color:white ; font-weight:bold; margin-left: 40ch;">Sender:</span>
             </div>
-          </div>
-
-          <div class="row">
-            <div class="container-fluid Driver-Details">
-              <h6>Your Driver</h6>
-              <i class="fa-regular fa-circle-user user-icon" style="color: #0D7CFF; margin-left: 2ch;"></i>
-
-              <span id="driver-name" style="margin-left:13ch; font-weight: bold;">Bartholomew D. Sales</span>
-              <i class="fa-solid fa-square-phone phone-icon" style="color:#e7ba09; margin-left: 4ch"></i>
-              <br>
-              <span id="logistic-company" style="margin-left:13ch;">&nbsp;&nbsp;&nbsp;AllGoods Logistic Co.</span>
-              <br>
+            <div class="col-6 text-left">
+              <span style="color:white; margin-left: 0ch;">Emelio Marasigan W. Araullones</span>
             </div>
 
             <div class="row">
-              <!--div class="col-6 text-left">
+              <div class="col-5 text-left" style="color: white; height: 0px;">
+                <span style="color:white ; font-weight:bold; margin-left: 40ch;">Recipient:</span>
+              </div>
+              <div class="col-6 text-left">
+                <span style="color:white; margin-left: 0ch;">Loida Anne Alicia Deline Q. Esteban</span> <br> <br>
+                <i class="fa-solid fa-box box" style="color:#e7ba09; margin-left:-26ch;"></i>
+                <span style="color:white; margin-left: -16ch;"> Port Batangas, Batangas Port Access Road, Calatagan,
+                  Batangas
+                </span>
+                <br><br>
+              </div>
+
+
+
+              <div class="row">
+                <div class="col-6 text-left">
+                  <div class="container-fluid vertical-line" style="margin-left: 35ch;"></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="container-fluid Driver-Details">
+                  <h6>Your Driver</h6>
+                  <i class="fa-regular fa-circle-user user-icon" style="color: #0D7CFF; margin-left: 2ch;"></i>
+
+                  <span id="driver-name" style="margin-left:13ch; font-weight: bold;">Bartholomew D. Sales</span>
+                  <i class="fa-solid fa-square-phone phone-icon" style="color:#e7ba09; margin-left: 4ch"></i>
+                  <br>
+                  <span id="logistic-company" style="margin-left:13ch;">&nbsp;&nbsp;&nbsp;AllGoods Logistic Co.</span>
+                  <br>
+                </div>
+
+                <div class="row">
+                  <!--div class="col-6 text-left">
                  <br>
                 <i class="fa-solid fa-box boxa" style="color:white; margin-left:34ch;"></i>
                 <span style="color:white; margin-left:44ch;"> Port Batangas, Batangas Port Access Road </span>
               </div-->
 
-              <div class="col-6 text-left">
-                <br>
-                <i class="fa-solid fa-box boxa" style="color:white; margin-left:34ch;"></i>
-              </div>
-              <div class="row">
-                <div class="col-12 text-left">
-                  <span style="color:white;margin-left: 44ch;">Port Batangas, Batangas Port Access Road, Calatagan,
-                    Batangas</span>
+                  <div class="col-6 text-left">
+                    <br>
+                    <i class="fa-solid fa-box boxa" style="color:white; margin-left:34ch;"></i>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 text-left">
+                      <span style="color:white;margin-left: 44ch;">Port Batangas, Batangas Port Access Road, Calatagan,
+                        Batangas</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </b-row>
+    </b-container>
   </div>
 </template>
 

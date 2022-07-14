@@ -5,12 +5,12 @@
       <TitleHeader/>
     </header>
     <div class="body-content">
-      <div class="container custom-container">
+      <div class="container">
         <div class="row square-box">
-          <div class="col-lg-6 text-center profile-icon">
+          <div class="col-md-6 text-center profile-icon">
             <PicUser/>
           </div>
-          <div class="col-lg-6  custom-edit">
+          <div class="col-md-6  custom-edit">
             <UpdateUserComp/>
           </div>
         </div>
@@ -23,7 +23,7 @@
 import PicUser from './PicUser.vue';
 import UpdateUserComp from './UpdateUserComp.vue';
 import TitleHeader from './TitleHeader.vue';
-import NavbarTop from '../Navbar/NavbarTop.vue'
+import NavbarTop from '../Navbar/NavbarTop.vue';
 
 export default {
   name: 'App',

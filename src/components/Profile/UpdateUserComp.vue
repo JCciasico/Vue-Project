@@ -133,16 +133,16 @@ export default {
 
 .details {
     font-family: 'Poppins', 'sans-serif';
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .icon {
-    font-size: 35px;
+    font-size: 30px;
     color: #FFC000;
 }
 
 #icon {
-    font-size: 40px;
+    font-size: 35px;
     color: #FFC000;
 }
 
@@ -155,6 +155,11 @@ export default {
 }
 .fa-chevron-right:hover{
     color: #FFC000;
+}
+@media (max-width:1200px) {
+    .details {
+        font-size: 1rem;
+    }
 }
 @media (max-width:600px) {
     .details {
