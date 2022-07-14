@@ -1,12 +1,12 @@
 <template>
   <div class="bg container-fluid">
-    <form>
+    <form> 
       <h1 class="text-dark text-center">Account Verification</h1>
       <v-app class="form">
         <label id="label" class="text-muted required">
           Proof of Identification
         </label>
-        <v-row justify="center" class="ma-2">
+        <v-row justify="center" class="custom-row">
           <v-col sm="10">
             <v-select label="Choose Government-issued ID Type" class="select" background-color="#eef5fd" :items="items"
               solo rounded>
@@ -29,7 +29,7 @@
             </v-row>
             </div>
             <v-row class="container">
-              <v-col class="center d-flex" style="margin-left:40px; margin-top:20px;">
+              <v-col class="center d-flex" style="margin-left:35px; margin-top:20px;">
                 <input type="checkbox" id="accept" value="accept" />
                 <label for="accept" class="check text-dark">
                   I have read, understood and accept the <br />
@@ -42,7 +42,7 @@
               <a href="/" class="text-primary">
                 Sign in.</a>
             </p>
-            <v-row class="container" style="margin-left:165px">
+            <v-row class="container" style="margin-left:165px" >
               <v-col class="center">
                 <a href="/signup" id="buttons" class="text btn btn-light btn-lg shadow text-muted">Back</a>
                 <a href="/registration" id="buttons" class="text btn btn-warning btn-lg shadow text-light">Sign
@@ -163,7 +163,6 @@ router-link.text {
 
 #buttons {
   margin: 0 15px;
-  margin-bottom: 10px;
   padding: 10px 40px;
   border-radius: 20px;
   text-decoration: none;
@@ -211,4 +210,5 @@ input[type="checkbox"]:checked+* {
   left: 0;
   width: 480px;
 }
+
 </style>

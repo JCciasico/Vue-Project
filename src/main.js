@@ -5,8 +5,12 @@ import{BootstrapVue, IconsPlugin} from 'bootstrap-vue'
 import * as VueGoogleMaps from "vue2-google-maps"
 import FullpageModal from 'vue-fullpage-modal'
 import PopupLayer from 'vue-popup-layer'
+import axios from 'axios'
+
+axios.defaults.baseURL = 'http://127.0.0.1:8000/api'
 
 Vue.config.productionTip = false
+
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)

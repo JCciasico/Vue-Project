@@ -5,7 +5,7 @@
       <TitleHeader/>
     </header>
     <div class="body-content">
-      <div class="container">
+      <div class="container custom-container">
         <div class="row square-box">
           <div class="col-lg-6 text-center profile-icon">
             <PicUser/>
