@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <b-button id=show-btn @click="showModal" style="margin-left:50ch;">See Details</b-button>
+  <div class="Modal">
+    <b-button id=show-btn @click="showModal">See Details</b-button>
 
     <b-modal ref="my-modal" title="Order Number">
 
@@ -12,7 +12,7 @@
 
         <!--ADDRESS-->
         <div class="container-fluid pick-upadd" style="margin-left:2ch;">
-        <br>
+          <br>
           <i class="far fa-circle" style="color:#FBCD10; text-align:left;"></i>
           &nbsp;&nbsp;<span id="usera">Makati City</span>
           <p>
@@ -32,7 +32,7 @@
 
         <!--PACKAGE DETAILS-->
         <div class="container-fluid package-details" style="margin-left:5ch;">
-        <br>
+          <br>
           <div class="row">
             <div class="col-1 text-left" style="color: black; height: 4px;">
               <br><img src="" width="70" height="50" alt="PACKAGE PIC">
@@ -132,7 +132,8 @@ export default {
 <style scoped>
 .datetime {
   background-color: #003060;
-  width: 30rem;
+  width: 28rem;
+  align-items: flex-start;
   height: 3em;
 }
 
@@ -142,20 +143,34 @@ export default {
   color: rgb(49, 48, 48);
   text-align: left;
 }
-.Price-MOP{
-  background-color:lightgray;
+
+.Price-MOP {
+  background-color: lightgray;
 }
-.distance{
-  background-color:lightgray;
+
+.distance {
+  background-color: lightgray;
 }
-#show-btn{
-  background-color: yellow;
+
+#show-btn {
+  background-color: #fbcd10;
   color: black;
-  font-family: 'Poppins','sans-serif';
+  font-family: 'Poppins', 'sans-serif';
   font-size: 1em;
   padding: .5em;
-  padding-left:1rem;
-  padding-right:1rem;
-  border-radius:4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 4rem;
+  margin-left: 50ch;
+}
+
+@media (max-width:700px) {
+  .datetime {
+    width: 22rem;
+  }
+
+  #show-btn {
+    margin-left: 16ch;
+  }
 }
 </style>

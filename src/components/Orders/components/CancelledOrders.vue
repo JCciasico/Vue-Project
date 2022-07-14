@@ -7,64 +7,68 @@
         <div>
             <b-tabs justified>
                 <div class="topnav">
-                    <a href="/toship" class="disable"><b>To ship</b></a>
-                    <a href="/ongoing" class="disable"><b>On going</b></a>
-                    <a href="/complete" class="disable"><b>Completed</b></a>
-                    <a class="active"><b style="color:white">Cancelled</b></a>
+                    <a href="/toship" class="disable"><b id="top-nav">To ship</b></a>
+                    <a href="/ongoing" class="disable"><b id="top-nav">On going</b></a>
+                    <a href="/complete" class="disable"><b id="top-nav">Completed</b></a>
+                    <a class="active"><b id="top-nav" style="color:white">Cancelled</b></a>
                 </div>
             </b-tabs>
         </div>
 
         <br>
+
         <b-container class="cancelled">
+            <!--ORDER-->
             <b-row>
-                <div class="container-fluid titleone">
+                <div class="container-fluid box-header">
                     <h5>March 25, 2022 3:00PM</h5>
                 </div>
-                <div class="container-fluid titletwoa">
+                <div class="container-fluid address">
                     <i class="fa-regular fa-circle" style="color:#FBCD10; margin-left: 3ch;"></i>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span id="user">House No., Street, City, Country, Postal Code</span> <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span id="pu-address">House No., Street, City, Country, Postal Code</span>
+                    <br>
                     <br>
 
 
                     <i class="fa-solid fa-location-dot" style="color:#FBCD10; margin-left: 3ch;"></i>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span id="user">House No., Street, City, Country, Postal Code</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span id="do-address">House No., Street, City, Country, Postal Code</span>
                 </div>
 
-                <div class="container-fluid titletwob">
+                <div class="container-fluid box-footer">
                     <div class="row">
                         <div class="col-6 text-left" style="color: black; height: 20px;">
-                            <span style="color:black ; font-weight:bold; margin-left: 10ch;">Truck</span>
+                            <span id="vehicle-type">Truck</span>
                         </div>
                         <div class="col-6 text-center">
-                            <span style="color:navy; font-weight:bold;">P424</span>
+                            <span id="price">P424</span>
                         </div>
                     </div>
                 </div>
-                </b-row>
-                <br>
-                <b-row>
-                <div class="container-fluid titletwo">
-                    <h5>March 27, 2022 12:00PM</h5>
-
+            </b-row>
+            <!--ORDER-->
+            <br>
+            <b-row>
+                <div class="container-fluid box-header">
+                    <h5>March 25, 2022 3:00PM</h5>
                 </div>
-                <div class="container-fluid titletwoa">
+                <div class="container-fluid address">
                     <i class="fa-regular fa-circle" style="color:#FBCD10; margin-left: 3ch;"></i>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span id="user">House No., Street, City, Country, Postal Code</span> <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span id="pu-address">House No., Street, City, Country, Postal Code</span>
+                    <br>
                     <br>
 
 
                     <i class="fa-solid fa-location-dot" style="color:#FBCD10; margin-left: 3ch;"></i>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span id="user">House No., Street, City, Country, Postal Code</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span id="do-address">House No., Street, City, Country, Postal Code</span>
                 </div>
 
-                <div class="container-fluid titletwob">
+                <div class="container-fluid box-footer">
                     <div class="row">
                         <div class="col-6 text-left" style="color: black; height: 20px;">
-                            <span style="color:black ; font-weight:bold; margin-left: 10ch;">Motorcycle</span>
+                            <span id="vehicle-type">Truck</span>
                         </div>
                         <div class="col-6 text-center">
-                            <span style="color:navy; font-weight:bold;">P123</span>
+                            <span id="price">P424</span>
                         </div>
                     </div>
                 </div>
@@ -85,12 +89,14 @@ export default {
 }
 </script>
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:ital,wght@0,600;1,400&display=swap');
+
 .cancelorder-body {
     height: 100%;
     background: white;
 }
 
-.titleone {
+.box-header {
     background-color: #003060;
     padding: .4rem;
     color: white;
@@ -98,15 +104,7 @@ export default {
     width: 50rem;
 }
 
-.titletwo {
-    background-color: #003060;
-    padding: .4rem;
-    color: white;
-    padding-left: 2rem;
-    width: 50rem;
-}
-
-.titleonea {
+.address {
     background-color: #ffffff;
     padding: 1rem;
     color: rgb(8, 8, 8);
@@ -115,17 +113,7 @@ export default {
     border: 1px solid rgb(156, 151, 151);
 }
 
-.titletwoa {
-    background-color: #ffffff;
-    padding: 1rem;
-    color: rgb(4, 0, 0);
-    padding-left: 2rem;
-    width: 50rem;
-    border: 1px solid rgb(156, 151, 151);
-
-}
-
-.titleoneb {
+.box-footer {
     background-color: rgb(224, 224, 238);
     padding: 0rem;
     color: rgb(8, 8, 8);
@@ -135,13 +123,22 @@ export default {
     text-align: left;
 }
 
-.titletwob {
-    background-color: rgb(224, 224, 238);
-    padding: 0rem;
-    color: rgb(8, 8, 8);
-    padding-left: 1rem;
-    width: 50rem;
-    border: 1px solid rgb(156, 151, 151);
+#date-time {
+    color: white;
+    font-weight: bold;
+    margin-left: 1ch;
+    font-size: large;
+}
+
+#vehicle-type {
+    color: black;
+    font-weight: bold;
+    margin-left: 10ch;
+}
+
+#price {
+    color: navy;
+    font-weight: bold;
 }
 
 #cancel {
@@ -186,5 +183,62 @@ export default {
 
 a.disable:hover {
     background-color: #FBCD10;
+}
+
+@media (max-width:700px) {
+
+    /* .topnav {
+        width: 25em;
+    } */
+
+    .box-header {
+        width: 22rem;
+    }
+
+    .address {
+        width: 22rem;
+    }
+
+    .box-footer {
+        width: 22rem;
+    }
+
+}
+
+@media (max-width:350px) {
+
+    /* .topnav {
+        width: 19em;
+    } */
+
+    .topnav a {
+        width: 25%;
+    }
+
+    .box-header {
+        width: 17rem;
+    }
+
+    .address {
+        width: 17rem;
+    }
+
+    .box-footer {
+        width: 17rem;
+    }
+
+}
+
+
+/* for top nav */
+@media(max-width:400px){
+    #top-nav{
+      font-size: 0.8rem;
+    }
+}
+@media(max-width:350px){
+    #top-nav{
+      font-size: 0.5rem;
+    }
 }
 </style>
