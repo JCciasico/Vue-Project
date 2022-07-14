@@ -1,6 +1,6 @@
 <template>
   <div>
-  <div>
+    <div>
       <b-tabs justified>
         <div class="topnav">
           <a class="disable"><b>To ship</b></a>
@@ -9,7 +9,7 @@
         </div>
       </b-tabs>
     </div>
-</div>
+  </div>
 </template>
 
 <script>
@@ -36,7 +36,7 @@
 }
 
 .topnav a {
-  width: 33.3%;
+  width: 25%;
   float: left;
   font-family: Arial;
   color: black;
@@ -55,5 +55,15 @@
 .topnav a.disable {
   border: 1px solid grey;
   color: solid white;
+}
+
+@media (max-width:700px) {
+  .topnav {
+    width: 20rem;
+  }
+
+  .topnav a {
+    width: 20rem;
+  }
 }
 </style>

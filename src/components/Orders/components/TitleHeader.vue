@@ -1,14 +1,16 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light menu">
-        <div class="container-fluid title">
-            <h2>Orders</h2>
-            <div>
-                <form class="nosubmit">
-                    <input class="nosubmit" type="search" placeholder="Search all orders">
-                </form>
+    <b-row>
+        <nav class="navbar navbar-expand-lg navbar-light menu">
+            <div class="container-fluid title">
+                <h2 id="Orders">Orders</h2>
+                <div>
+                    <b-form class="nosubmit">
+                        <input class="nosubmit" type="search" placeholder="Search all orders">
+                    </b-form>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </b-row>
 </template>
 
 <script>
@@ -32,12 +34,6 @@ export default {
 
 }
 
-.pull-right {
-    padding-right: 20px;
-    align-items: right;
-    margin: 0 auto;
-}
-
 form.nosubmit {
     border: none;
     padding: 0;
@@ -53,5 +49,23 @@ input.nosubmit {
     float: right;
     outline: none;
     transition: .3s;
+}
+
+@media (max-width:700px) {
+    /* .title {
+        width: 25rem;
+    } */
+
+    .pull-right {
+        width: 15rem;
+    }
+
+    .b-form {
+        width: 10rem;
+    }
+
+    input.nosubmit {
+        width: 10em;
+    }
 }
 </style>
