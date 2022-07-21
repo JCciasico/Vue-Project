@@ -34,7 +34,8 @@ export default {
     data(){
         return{
             form:{
-                companyname: this.company
+                companyname: this.company,
+                name:''
             }
         }
     },
