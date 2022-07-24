@@ -51,13 +51,7 @@ export default {
   height: 100vh;
   background: linear-gradient(to right, white, yellow);
 }
-.square-box{
-    background-color: white;
-    padding: 1rem;
-    margin: auto;
-    border-radius: 25px;
-    box-shadow: 0px 3px 0px 1px #747d8c;
-}
+
 .profile-icon{
     margin:auto;
     padding-top: 5em;
